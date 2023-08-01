@@ -17,6 +17,10 @@ const products = [
     {
         id: "P4",
         name: "Ananas"
+    },
+    {
+        id: "P5",
+        name: "Orange"
     }
 ]
 
@@ -44,9 +48,6 @@ const stock: { [key: string]: { [key: string]: number } } = {
         "W2": 5
     },
     P4: {
-        "W1": 1
-    },
-    P5: {
         "W1": 1
     }
 }
