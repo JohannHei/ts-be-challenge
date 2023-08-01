@@ -1,50 +1,49 @@
-import {gql} from 'graphql-tag'
 import Fastify from "fastify";
 import mercurius, {IResolvers} from "mercurius";
 
 const products = [
     {
-        "id": "P1",
-        "name": "Banana"
+        id: "P1",
+        name: "Banana"
     },
     {
-        "id": "P2",
-        "name": "Olives"
+        id: "P2",
+        name: "Olives"
     },
     {
-        "id": "P3",
-        "name": "Mango"
+        id: "P3",
+        name: "Mango"
     },
     {
-        "id": "P4",
-        "name": "Ananas"
+        id: "P4",
+        name: "Ananas"
     }
 ]
 
-const warehouses = [
+const warehouses: { id: string, name: string }[] = [
     {
-        "id": "W1",
-        "name": "Battersea"
+        id: "W1",
+        name: "Battersea"
     },
     {
-        "id": "W2",
-        "name": "Kensington"
+        id: "W2",
+        name: "Kensington"
     }
 ];
-const stock = {
-    "P1": {
+const stock: { [key: string]: { [key: string]: number } } = {
+    P1: {
         "W1": 3,
         "W2": 5
     },
-    "P2": {
+    P2: {
         "W1": 0,
         "W2": 15
     },
-    "P3": {
+    P3: {
         "W1": 13,
         "W2": 5
     },
-    "P4": {
+    P4: {
         "W1": 1
     }
 }

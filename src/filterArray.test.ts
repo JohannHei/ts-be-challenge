@@ -1,7 +1,6 @@
 /**
  * Code the filterArray function
  */
-
 describe("filterArray",()=>{
 
     test("number",()=>{
