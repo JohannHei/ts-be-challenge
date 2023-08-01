@@ -45,6 +45,9 @@ const stock: { [key: string]: { [key: string]: number } } = {
     },
     P4: {
         "W1": 1
+    },
+    P5: {
+        "W1": 1
     }
 }
 
